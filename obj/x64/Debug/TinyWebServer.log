@@ -1,0 +1,71 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.63.128”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  Buffer.cpp
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(32,24): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(32,24): warning :      EnsureWriteable(len);
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(32,24): warning :                         ^
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(34,19): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(34,19): warning :      HasWritten(len);
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(34,19): warning :                    ^
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(51,17): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(51,17): warning :      HasRead(pos - ToReadPos());
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(51,17): warning :              ~~~~^~~~~~~~~~~~~
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(65,25): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(65,25): warning :      const int len = read(fd,buff,sizeof(buff));
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(65,25): warning :                      ~~~~^~~~~~~~~~~~~~~~~~~~~~
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(97,25): warning : conversion to ‘int’ from ‘ssize_t {aka long int}’ may alter its value [-Wconversion]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(97,25): warning :      int WriteLen = write(fd,_buffer.data(),len);
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(97,25): warning :                     ~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(109,27): warning : conversion to ‘int’ from ‘std::vector<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(109,27): warning :      return _buffer.size() - _writepos;
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\Buffer\Buffer.cpp(109,27): warning :             ~~~~~~~~~~~~~~~^~~~~~~~~~~
+  httpconn.cpp
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httpconn.cpp(81,1): warning : control reaches end of non-void function [-Wreturn-type]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httpconn.cpp(81,1): warning :  }
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httpconn.cpp(81,1): warning :  ^
+  httprequest.cpp
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.h(23,21): warning : ‘HttpRequest::_path’ will be initialized after [-Wreorder]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.h(21,21): warning : ‘std::__cxx11::string HttpRequest::_vision’ [-Wreorder]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(5,1): warning : when initialized here [-Wreorder]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(55,40): warning : conversion to ‘int’ from ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(55,40): warning :      int MethodSpacePosition = line.find(" ");
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(55,40): warning :                                ~~~~~~~~~^~~~~
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(56,28): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(56,28): warning :      if(MethodSpacePosition == line.npos)
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(62,37): warning : conversion to ‘int’ from ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(62,37): warning :      int UrlSpacePosition = line.find(" ",MethodSpacePosition+1);
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(62,37): warning :                             ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(63,25): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(63,25): warning :      if(UrlSpacePosition == line.npos)
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(119,1): warning : no return statement in function returning non-void [-Wreturn-type]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(119,1): warning :  }
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(119,1): warning :  ^
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(124,1): warning : no return statement in function returning non-void [-Wreturn-type]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(124,1): warning :  }
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httprequest.cpp(124,1): warning :  ^
+  httpresponse.cpp
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httpresponse.cpp(66,20): warning : conversion to ‘int’ from ‘__off_t {aka long int}’ may alter its value [-Wconversion]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httpresponse.cpp(66,20): warning :      int len = lseek(fd,0,SEEK_END);
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\http\httpresponse.cpp(66,20): warning :                ~~~~~^~~~~~~~~~~~~~~
+  main.cpp
+  webserver.cpp
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.h(23,14): warning : ‘WebServer::_isClose’ will be initialized after [-Wreorder]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.h(23,14): warning :          bool _isClose;
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.h(23,14): warning :               ^~~~~~~~
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.h(22,20): warning : ‘ThreadPool WebServer::_pool’ [-Wreorder]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.h(22,20): warning :          ThreadPool _pool;
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.h(22,20): warning :                     ^~~~~
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.cpp(17,1): warning : when initialized here [-Wreorder]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.cpp(23,35): warning : conversion to ‘int’ from ‘std::__cxx11::basic_string<char>::size_type {aka long unsigned int}’ may alter its value [-Wconversion]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.cpp(23,35): warning :      int pos = tempstr.find_last_of('/');
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.cpp(23,35): warning :                ~~~~~~~~~~~~~~~~~~~~^~~~~
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.cpp(24,16): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.cpp(78,25): warning : conversion to ‘uint16_t {aka short unsigned int}’ from ‘int’ may alter its value [-Wconversion]
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.cpp(78,25): warning :    name.sin_port = htons(_port);
+E:\project\MyWebServer\TinyWebServer\TinyWebServer\code\webserver\webserver.cpp(78,25): warning :                          ^~~~~
+  正在链接对象
+  TinyWebServer.vcxproj -> E:\project\MyWebServer\TinyWebServer\TinyWebServer\bin\x64\Debug\TinyWebServer.out
